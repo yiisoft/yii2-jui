@@ -1,8 +1,8 @@
 JUI Extension for Yii 2
 =======================
 
-This is the JQuery UI extension for Yii 2. It encapsulates [JQuery UI widgets](http://jqueryui.com/) as Yii widgets,
-and makes using JQuery UI widgets in Yii applications extremely easy.
+This is the jQuery UI extension for Yii 2. It encapsulates [jQuery UI widgets](http://jqueryui.com/) as Yii widgets,
+and makes using jQuery UI widgets in Yii applications extremely easy.
 
 Getting Started
 ---------------

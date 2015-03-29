@@ -2,13 +2,13 @@ Basic Usage
 ===========
 
 The following
-single line of code in a view file would render a [JQuery UI DatePicker](http://api.jqueryui.com/datepicker/) widget:
+single line of code in a view file would render a [jQuery UI DatePicker](http://api.jqueryui.com/datepicker/) widget:
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>
 ```
 
-Configuring the Jquery UI options should be done using the clientOptions attribute:
+Configuring the jQuery UI options should be done using the clientOptions attribute:
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName', 'clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
