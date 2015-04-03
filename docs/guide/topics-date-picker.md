@@ -8,7 +8,7 @@ an [ActiveForm](https://github.com/yiisoft/yii2/blob/master/docs/guide/input-for
 In this situation there are 3 components that play together:
 
 - The [[yii\jui\DatePicker|DatePicker]] widget, which is used in the form to display the input field for the model's attribute.
-- The [formatter](https://github.com/yiisoft/yii2/blob/master/docs/guide/output-formatter.md) application component which is responsible for the date format that is displayed to the user.
+- The [formatter](https://github.com/yiisoft/yii2/blob/master/docs/guide/output-formatting.md) application component which is responsible for the date format that is displayed to the user.
 - The [DateValidator](https://github.com/yiisoft/yii2/blob/master/docs/guide/tutorial-core-validators.md#date) which will validate the user input and convert it to a unix timestamp.
 
 First, we add the date picker input field to the form by using the [[yii\widgets\ActiveField::widget()|widget()]] method of the form field:
