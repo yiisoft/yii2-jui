@@ -8,7 +8,7 @@ DatePicker で日付の入力を扱う
 この状況において、共同して働くコンポーネントが三つあります。
 
 - [[yii\jui\DatePicker|DatePicker]] ウィジェット。フォームの中で用いられ、モデルの `deadline` 属性のためのインプットフィールドを表示します。
-- [フォーマッタ](https://github.com/yiisoft/yii2/blob/master/docs/guide-ja/output-formatter.md) アプリケーションコンポーネント。ユーザに表示される日付の書式について責任を持ちます。
+- [フォーマッタ](https://github.com/yiisoft/yii2/blob/master/docs/guide-ja/output-formattering.md) アプリケーションコンポーネント。ユーザに表示される日付の書式について責任を持ちます。
 - [DateValidator](https://github.com/yiisoft/yii2/blob/master/docs/guide-ja/tutorial-core-validators.md#date)。ユーザの入力を検証し、それを unix タイムスタンプに変換します。
 
 最初に、フォームフィールドの [[yii\widgets\ActiveField::widget()|widget()]] メソッドを使って、フォームに日付選択のインプットフィールドを追加します。
