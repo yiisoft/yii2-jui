@@ -9,7 +9,7 @@
 В цій ситуації є 3 компоненти, що взаємодіють між собою:
 
 - Віджет [[yii\jui\DatePicker|DatePicker]], який використовується у формі для відображення поля введення атрибуту моделі.
-- Компонент додатку [formatter](https://github.com/yiisoft/yii2/blob/master/docs/guide/output-formatter.md),
+- Компонент додатку [formatter](https://github.com/yiisoft/yii2/blob/master/docs/guide/output-formatting.md),
 який відповідає за формат дати, що відображається користувачеві.
 - [DateValidator](https://github.com/yiisoft/yii2/blob/master/docs/guide/tutorial-core-validators.md#date),
 який перевіряє що ввів користувач і конвертує в мітку часу Unix.
