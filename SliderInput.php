@@ -93,7 +93,7 @@ class SliderInput extends InputWidget
 
         if ($this->hasModel()) {
             echo Html::activeHiddenInput($this->model, $this->attribute, $this->options);
-            $this->clientOptions['value'] = $this->model{$this->attribute};
+            $this->clientOptions['value'] = Html::getAttributeValue($this->model, $this->attribute);
         } else {
             echo Html::hiddenInput($this->name, $this->value, $this->options);
             $this->clientOptions['value'] = $this->value;
