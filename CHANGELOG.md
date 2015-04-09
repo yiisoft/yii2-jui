@@ -4,7 +4,7 @@ Yii Framework 2 jui extension Change Log
 2.0.4 under development
 -----------------------
 
-- no changes in this release.
+- Bug #6: When using `DatePicker` translations, asset was registered without timestamp when asset manager `$appendTimestamp` was enabled (samdark) 
 
 
 2.0.3 March 01, 2015
