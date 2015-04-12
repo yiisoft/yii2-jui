@@ -139,7 +139,7 @@ class DatePicker extends InputWidget
         $language = $this->language ? $this->language : Yii::$app->language;
 
         if (strncmp($this->dateFormat, 'php:', 4) === 0) {
-            $this->clientOptions['dateFormat'] = FormatConverter::convertDatePhpToJui(substr($this->dateFormat, 4), 'date', $language);
+            $this->clientOptions['dateFormat'] = FormatConverter::convertDatePhpToJui(substr($this->dateFormat, 4));
         } else {
             $this->clientOptions['dateFormat'] = FormatConverter::convertDateIcuToJui($this->dateFormat, 'date', $language);
         }
