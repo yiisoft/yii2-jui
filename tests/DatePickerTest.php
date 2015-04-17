@@ -15,6 +15,11 @@ class DatePickerTest extends TestCase
 {
     protected function setUp()
     {
+        $this->resetApplication();
+    }
+
+    protected function resetApplication()
+    {
         $this->mockWebApplication([
             'components' => [
                 'assetManager' => [
@@ -28,11 +33,20 @@ class DatePickerTest extends TestCase
 
     public function testLanguageAsset()
     {
+        $this->checkDatePickerAsset('zh-Hant-CN', 'zh-CN');
+        $this->checkDatePickerAsset('zh-CN', 'zh-CN');
+        $this->checkDatePickerAsset('ru_RU', 'ru');
+        $this->checkDatePickerAsset('sr_Latn_SR_REVISED@currency=USD', 'sr-SR');
+        $this->checkDatePickerAsset('nonexisting', false);
+    }
+
+    protected function checkDatePickerAsset($language, $expectedAssetLanguage)
+    {
         DatePicker::$counter = 0;
         $out = DatePicker::widget([
             'name' => 'test',
             'value' => '2015-04-09',
-            'language' => 'ru-RU',
+            'language' => $language,
             'dateFormat' => 'yyyy-MM-dd',
         ]);
 
@@ -41,10 +55,19 @@ class DatePickerTest extends TestCase
         ]);
 
         // https://github.com/yiisoft/yii2-jui/issues/6
-        static::assertRegExp(
-            '~<script src="/assets/[0-9a-f]+/ui/i18n/datepicker-ru.js\?v=\d+"></script>~',
-            $out,
-            'There should be language asset registered with timestamp appended.'
-        );
+        if ($expectedAssetLanguage === false) {
+            static::assertNotRegExp(
+                '~<script src="/assets/[0-9a-f]+/ui/i18n/datepicker-~',
+                $out,
+                'There should be no attempt to register non-existing language asset.'
+            );
+        } else {
+            static::assertRegExp(
+                '~<script src="/assets/[0-9a-f]+/ui/i18n/datepicker-' . $expectedAssetLanguage . '\.js\?v=\d+"></script>~',
+                $out,
+                'There should be "' . $expectedAssetLanguage . '" language asset registered with timestamp appended.'
+            );
+        }
+        $this->resetApplication();
     }
 }

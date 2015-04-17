@@ -42,12 +42,14 @@ class DatePickerLanguageAsset extends AssetBundle
     public function registerAssetFiles($view)
     {
         if ($this->autoGenerate) {
-            $language = $this->language;
-            $fallbackLanguage = substr($this->language, 0, 2);
-            if ($fallbackLanguage !== $this->language && !file_exists(Yii::getAlias($this->sourcePath . "/ui/i18n/datepicker-{$language}.js"))) {
-                $language = $fallbackLanguage;
+            $language = Yii::$app->getI18n()->normalizeLocale($this->language);
+            while ($language !== null && !file_exists(Yii::getAlias($this->sourcePath . "/ui/i18n/datepicker-{$language}.js"))) {
+                $language = Yii::$app->getI18n()->getFallbackLanguageId($language);
             }
-            $this->js[] = "ui/i18n/datepicker-$language.js";
+
+            if ($language !== null) {
+                $this->js[] = "ui/i18n/datepicker-$language.js";
+            }
         }
         parent::registerAssetFiles($view);
     }
