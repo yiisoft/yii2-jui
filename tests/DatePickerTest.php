@@ -13,8 +13,12 @@ use yii\web\View;
  */
 class DatePickerTest extends TestCase
 {
-    protected function setUp()
+    public function testLanguageAsset()
     {
+        if (version_compare(str_replace('-dev', '', Yii::getVersion()), '2.0.3', '<')) {
+            $this->markTestSkipped('This feature is only available since Yii 2.0.3.');
+        }
+
         $this->mockWebApplication([
             'components' => [
                 'assetManager' => [
@@ -24,10 +28,7 @@ class DatePickerTest extends TestCase
                 ],
             ]
         ]);
-    }
 
-    public function testLanguageAsset()
-    {
         DatePicker::$counter = 0;
         $out = DatePicker::widget([
             'name' => 'test',
