@@ -58,7 +58,7 @@ class Menu extends \yii\widgets\Menu
 
         $id = $this->options['id'];
         if ($this->clientOptions !== false) {
-            $options = empty($this->clientOptions) ? '' : Json::encode($this->clientOptions);
+            $options = empty($this->clientOptions) ? '' : Json::htmlEncode($this->clientOptions);
             $js = "jQuery('#$id').menu($options);";
             $view->registerJs($js);
         }
