@@ -1,10 +1,15 @@
 Yii Framework 2 jui extension Change Log
 ========================================
 
-2.0.4 under development
+2.0.5 under development
 -----------------------
 
-- Bug #6: When using `DatePicker` translations, asset was registered without timestamp when asset manager `$appendTimestamp` was enabled (samdark) 
+
+
+2.0.4 May 10, 2015
+------------------
+
+- Bug #6: When using `DatePicker` translations, asset was registered without timestamp when asset manager `$appendTimestamp` was enabled (samdark)
 - Bug (CVE-2015-3397): Using `Json::htmlEncode()` for safer JSON data encoding in HTML code (samdark, Tomasz Tokarski)
 
 
