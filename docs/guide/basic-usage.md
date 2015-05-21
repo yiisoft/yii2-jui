@@ -17,5 +17,5 @@ Configuring the jQuery UI options should be done using the clientOptions attribu
 If you want to use the JUI widget in an ActiveForm, it can be done like this:
 
 ```php
-<?= $form->field($model,'attributeName')->widget(DatePicker::className(),['clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
+<?= $form->field($model, 'attributeName')->widget(DatePicker::className(), ['clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
 ```
