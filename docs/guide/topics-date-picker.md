@@ -43,4 +43,4 @@ You may skip this step if your date value is [required](https://github.com/yiiso
 
 The default format of both, date picker and date validator is the value of `Yii::$app->formatter->dateFormat` so you can use this
 property to configure the format of the date for the whole application.
-To change the date format you have to configure [[yii\validators\DateValidator::format]] and [[yii\jui\DatePicker::dateFormat]].
+To change the date format you have to configure [[yii\validators\DateValidator::format|format]] and [[yii\jui\DatePicker::dateFormat|dateFormat]].
