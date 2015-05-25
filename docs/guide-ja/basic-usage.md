@@ -16,5 +16,5 @@ jQuery UI のオプションは、`clientOptions` 属性を使って構成しな
 ActiveForm の中で JUI ウィジェットを使いたい場合は、次のようにすることが出来ます。
 
 ```php
-<?= $form->field($model,'attributeName')->widget(DatePicker::className(),['clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
+<?= $form->field($model, 'attributeName')->widget(DatePicker::className(), ['clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
 ```
