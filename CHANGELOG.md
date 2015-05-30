@@ -4,7 +4,7 @@ Yii Framework 2 jui extension Change Log
 2.0.5 under development
 -----------------------
 
-
+- Bug #8607: `yii\jui\Spinner` was using wrong event names (samdark)
 
 2.0.4 May 10, 2015
 ------------------
