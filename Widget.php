@@ -76,7 +76,8 @@ class Widget extends \yii\base\Widget
         if ($this->clientOptions !== false) {
             $options = empty($this->clientOptions) ? '' : Json::htmlEncode($this->clientOptions);
             $js = "jQuery(document).on('ready pjax:success', function() { jQuery('#$id').$name($options); });";
-            $this->getView()->registerJs($js);
+            $view = $this->getView();
+            $view->registerJs($js, $view::POS_END);
         }
     }
 
