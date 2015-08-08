@@ -8,6 +8,7 @@
 namespace yii\jui;
 
 use yii\helpers\Json;
+use yii\web\View;
 
 /**
  * \yii\jui\Widget is the base class for all jQuery UI widgets.
@@ -76,8 +77,7 @@ class Widget extends \yii\base\Widget
         if ($this->clientOptions !== false) {
             $options = empty($this->clientOptions) ? '' : Json::htmlEncode($this->clientOptions);
             $js = "jQuery(document).on('ready pjax:success', function() { jQuery('#$id').$name($options); });";
-            $view = $this->getView();
-            $view->registerJs($js, $view::POS_END);
+            $this->getView()->registerJs($js, View::POS_END);
         }
     }
 
