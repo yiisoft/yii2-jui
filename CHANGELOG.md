@@ -1,11 +1,18 @@
 Yii Framework 2 jui extension Change Log
 ========================================
 
-2.0.5 under development
+2.0.6 under development
 -----------------------
 
+- Bug #36: `yii\jui\Draggable` was using wrong event names (samdark)
 - Bug #9: Widgets did not work after a pjax page load (smichae)
+
+
+2.0.5 March 17, 2016
+--------------------
+
 - Bug #8607: `yii\jui\Spinner` was using wrong event names (samdark)
+
 
 2.0.4 May 10, 2015
 ------------------
