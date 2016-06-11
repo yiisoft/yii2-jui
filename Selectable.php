@@ -29,7 +29,7 @@ use yii\helpers\Html;
  *                 'tag' => 'li',
  *             ],
  *         ],
- *     ),
+ *     ],
  *     'options' => [
  *         'tag' => 'ul',
  *     ],
