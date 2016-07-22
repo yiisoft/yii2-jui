@@ -33,6 +33,16 @@ use yii\helpers\Html;
 class Resizable extends Widget
 {
     /**
+     * @inheritdoc
+     */
+    protected $clientEventMap = [
+        'create' => 'resizecreate',
+        'resize' => 'resize',
+        'start' => 'resizestart',
+        'stop' => 'resizestop',
+    ];
+
+    /**
      * Initializes the widget.
      */
     public function init()
