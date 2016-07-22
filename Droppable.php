@@ -42,6 +42,7 @@ class Droppable extends Widget
         'over' => 'dropover',
     ];
 
+
     /**
      * Initializes the widget.
      */

@@ -40,6 +40,7 @@ class Draggable extends Widget
         'start' => 'dragstart',
     ];
 
+
     /**
      * Initializes the widget.
      */

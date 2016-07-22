@@ -42,6 +42,7 @@ class Resizable extends Widget
         'stop' => 'resizestop',
     ];
 
+
     /**
      * Initializes the widget.
      */
