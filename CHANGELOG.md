@@ -7,7 +7,7 @@ Yii Framework 2 jui extension Change Log
 - no changes in this release.
 
 
-2.0.6 under development
+2.0.6 July 22, 2016
 -----------------------
 
 - Bug #36: `yii\jui\Draggable` was using wrong event names (samdark)
