@@ -2,9 +2,10 @@
 /* @var $this \yii\web\View */
 ?>
 <?php \yii\jui\Selectable::begin([
+    'id' => 'my-selectable-items',
     'clientOptions' => [
         'filter' => 'my-selectable-item',
-         'tolerance' => 'fit',
+         'tolerance' => 'touch',
      ],
  ]); ?>
 <ul>
@@ -19,3 +20,4 @@
       </div>
  </div>
 <?php \yii\jui\Selectable::end(); ?>
+
