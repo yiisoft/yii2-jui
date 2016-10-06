@@ -27,24 +27,24 @@ class SelectableTest extends TestCase
 
         ob_start();
         Selectable::begin([
-            'id' => 'my-selectable-items',
+            'id' => 'myselectableitems',
             'clientOptions' => [
-                'filter' => 'my-selectable-item',
+                'filter' => 'myselectableitem',
                 'tolerance' => 'touch',
             ]
         ]);
         $out = ob_get_contents();
 
-        $out .= join('\n', [
+        $out .= join("\n", [
             '<ul>',
-                '<li class="my-selectable-item">Item 1</li>',
-                '<li class="my-selectable-item">Item 2</li>',
-                '<li class="no-selectable-item">Item 3</li>',
-                '<li class="my-selectable-item">Item 4</li>',
+                '<li class="myselectableitem">Item 1</li>',
+                '<li class="myselectableitem">Item 2</li>',
+                '<li class="noselectableitem">Item 3</li>',
+                '<li class="myselectableitem">Item 4</li>',
             '</ul>',
             '<div>',
                 '<div>',
-                    '<div class="my-selectable-item">Another item</div>',
+                    '<div class="myselectableitem">Another item</div>',
                 '</div>',
             '</div>',
         ]);
@@ -59,16 +59,12 @@ class SelectableTest extends TestCase
 
         // https://github.com/yiisoft/yii2-jui/issues/46
         static::assertRegExp(
-            '~<li class="my-selectable-item ui-selectee">Item 1</li>~',
+            '~<div id="myselectableitems">\n<ul>\n<li class="myselectableitem">Item 1</li>\n<li class="myselectableitem">Item 2</li>\n<li class="noselectableitem">Item 3</li>\n<li class="myselectableitem">Item 4</li>\n</ul>\n<div>\n<div>\n<div class="myselectableitem">Another item</div>\n</div>\n</div></div>~',
             $out,
-            'There should be selectable items li with class my-selectable-item ui-selectee');
+            'There should be a div with class myselectableitems enclosing html between begin()` and `end()` methods');
         static::assertRegExp(
-            '~<div class="my-selectable-item ui-selectee">Another item</div>~',
+            '~<script type="text/javascript">jQuery\(document\)\.ready\(function \(\) \{\njQuery\(\'#myselectableitems\'\)\.selectable\(\{\"filter"\:"myselectableitem","tolerance"\:"touch"\}\);\n\}\);</script>~',
             $out,
-            'There should be selectable items div with class my-selectable-item ui-selectee');
-        static::assertRegExp(
-            '~<li class="no-selectable-item">Item 3</li>~',
-            $out,
-            'There should be not selectable items li with class no-selectable-item and no ui-selectee class');
+            'There should be the jQuery UI Selectable plugin initialization for myselectableitems');
     }
 }
