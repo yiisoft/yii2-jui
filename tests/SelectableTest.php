@@ -25,13 +25,15 @@ class SelectableTest extends TestCase
             ]
         ]);
 
-        $out = Selectable::begin([
+        ob_start();
+        Selectable::begin([
             'id' => 'my-selectable-items',
             'clientOptions' => [
                 'filter' => 'my-selectable-item',
                 'tolerance' => 'touch',
             ]
         ]);
+        $out = ob_get_contents();
 
         $out .= join('\n', [
             '<ul>',
@@ -47,7 +49,9 @@ class SelectableTest extends TestCase
             '</div>',
         ]);
 
-        $out .= Selectable::end();
+        ob_start();
+        Selectable::end();
+        $out = ob_get_contents();
 
         $out = Yii::$app->view->renderFile('@yiiunit/extensions/jui/data/views/layout.php', [
             'content' => $out,
