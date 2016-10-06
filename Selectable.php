@@ -47,7 +47,7 @@ use yii\helpers\Html;
  * ```php
  * Selectable::begin([
  *     'clientOptions' => [
- *         'filter' => 'my-selectable-item'
+ *         'filter' => 'my-selectable-item',
  *         'tolerance' => 'touch',
  *     ],
  * ]);
