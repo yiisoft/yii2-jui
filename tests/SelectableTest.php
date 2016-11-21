@@ -33,7 +33,7 @@ class SelectableTest extends TestCase
                 'tolerance' => 'touch',
             ]
         ]);
-        $out = ob_get_flush();
+        $out = ob_get_clean();
 
         $out .= join("\n", [
             '<ul>',
@@ -51,7 +51,7 @@ class SelectableTest extends TestCase
 
         ob_start();
         Selectable::end();
-        $out .= ob_get_flush();
+        $out .= ob_get_clean();
 
         $out = Yii::$app->view->renderFile('@yiiunit/extensions/jui/data/views/layout.php', [
             'content' => $out,

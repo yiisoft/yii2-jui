@@ -48,4 +48,37 @@ class DatePickerTest extends TestCase
             'There should be language asset registered with timestamp appended.'
         );
     }
+
+    public function invalidDateInputProvider()
+    {
+        return [
+            ['0000!'],
+            ['Ноя 2, 2016'],
+            ['12. Dezember 2016'],
+            ['invalid date'],
+        ];
+    }
+
+    /**
+     * No exception should be thrown by the formatter, instead the value should stay as is in this case
+     * @dataProvider invalidDateInputProvider
+     */
+    public function testInvalidDateValue($value)
+    {
+        $this->mockWebApplication([
+            'components' => [
+                'assetManager' => [
+                    'basePath' => '@yiiunit/extensions/jui/data/web/assets',
+                    'baseUrl' => '/assets',
+                ],
+            ]
+        ]);
+
+        ob_start();
+        echo DatePicker::widget([
+            'value' => $value
+        ]);
+        $output = ob_get_clean();
+        $this->assertContains($value, $output);
+    }
 }
