@@ -40,7 +40,7 @@ class Dialog extends Widget
         parent::init();
         echo Html::beginTag('div', $this->options) . "\n";
         
-        //Temporary fix of closing icon (x) not showing up in dialog
+        //Fix for closing icon (x) not showing up in dialog
         $this->getView()->registerJs("
             var bootstrapButton = $.fn.button.noConflict(); 
             $.fn.bootstrapBtn = bootstrapButton;", 
