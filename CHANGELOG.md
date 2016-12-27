@@ -4,9 +4,10 @@ Yii Framework 2 jui extension Change Log
 2.0.7 under development
 -----------------------
 
+- Bug #45: Fixed missing close icon in `yii\jui\Dialog` (mtangoo)
 - Bug #46: `yii\jui\Selectable` add support for `begin()`, `end()` widget methods (fdezmc)
 - Enh #56: Use `jQuery` instead of `$` in generated code to avoid conflicts (samdark)
-- Chg #55: `yii\jui\AutoComplete::run()` now returns output instead of echoing it (unlimix) 
+- Chg #55: `yii\jui\AutoComplete::run()` now returns output instead of echoing it (unlimix)
 
 
 2.0.6 July 22, 2016
