@@ -53,7 +53,7 @@ use yii\helpers\Html;
 class AutoComplete extends InputWidget
 {
     /**
-     * @return string
+     * @inheritdoc
      */
     public function run()
     {
