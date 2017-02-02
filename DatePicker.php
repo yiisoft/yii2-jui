@@ -150,7 +150,7 @@ class DatePicker extends InputWidget
             $assetBundle->language = $language;
             $options = Json::htmlEncode($this->clientOptions);
             $language = Html::encode($language);
-            $view->registerJs("$('#{$containerID}').datepicker($.extend({}, $.datepicker.regional['{$language}'], $options));");
+            $view->registerJs("jQuery('#{$containerID}').datepicker($.extend({}, $.datepicker.regional['{$language}'], $options));");
         } else {
             $this->registerClientOptions('datepicker', $containerID);
         }

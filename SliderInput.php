@@ -101,7 +101,7 @@ class SliderInput extends InputWidget
 
         if (!isset($this->clientEvents['slide'])) {
             $this->clientEvents['slide'] = 'function (event, ui) {
-                $("#' . $this->options['id'] . '").val(ui.value);
+                jQuery("#' . $this->options['id'] . '").val(ui.value);
             }';
         }
 
