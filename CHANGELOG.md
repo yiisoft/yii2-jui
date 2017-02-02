@@ -4,7 +4,7 @@ Yii Framework 2 jui extension Change Log
 2.0.7 under development
 -----------------------
 
-- no changes in this release.
+- Bug #46: `yii\jui\Selectable` add support for `begin()`, `end()` widget methods (fdezmc)
 
 
 2.0.6 July 22, 2016
@@ -12,7 +12,6 @@ Yii Framework 2 jui extension Change Log
 
 - Bug #36: `yii\jui\Draggable` was using wrong event names (samdark)
 - Bug #41: `yii\jui\Droppable` and `yii\jui\Resizable` were using wrong event names (samdark)
-- Bug #46: `yii\jui\Selectable` add support for `begin()`, `end()` widget methods (fdezmc)
 
 
 2.0.5 March 17, 2016
