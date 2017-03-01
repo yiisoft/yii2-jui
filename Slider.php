@@ -12,7 +12,7 @@ use yii\helpers\Html;
 /**
  * Slider renders a slider jQuery UI widget.
  *
- * ```
+ * ```php
  * echo Slider::widget([
  *     'clientOptions' => [
  *         'min' => 1,
