@@ -13,3 +13,5 @@ require_once(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
 Yii::setAlias('@yiiunit/extensions/jui', __DIR__);
 Yii::setAlias('@yii/jui', dirname(__DIR__));
+
+require_once(__DIR__ . '/compatibility.php');
