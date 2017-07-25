@@ -1,5 +1,10 @@
-JUI Extension for Yii 2
-=======================
+<p align="center">
+    <a href="http://jqueryui.com/" target="_blank" rel="external">
+        <img src="https://brand.jquery.org/resources/jqueryui-mark-dark.gif" height="110px">
+    </a>
+    <h1 align="center">JUI Extension for Yii 2</h1>
+    <br>
+</p>
 
 This is the JQuery UI extension for [Yii framework 2.0](http://www.yiiframework.com). It encapsulates [JQuery UI widgets](http://jqueryui.com/) as Yii widgets,
 and makes using JQuery UI widgets in Yii applications extremely easy.
