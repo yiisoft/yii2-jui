@@ -21,6 +21,12 @@
         "yiisoft/yii2": "~2.0.4",
         "bower-asset/jquery-ui": "1.11.*@stable"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "yii\\jui\\": ""
@@ -29,10 +35,6 @@
     "extra": {
         "branch-alias": {
             "dev-master": "2.0.x-dev"
-        },
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
         }
     }
 }
