@@ -76,7 +76,7 @@ class Selectable extends Widget
 {
     const MODE_DEFAULT = 'MODE_DEFAULT';
     const MODE_BEGIN = 'MODE_BEGIN';
-    
+
     /**
      * @var string the mode used to render the widget.
      */
@@ -111,11 +111,12 @@ class Selectable extends Widget
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
     public $itemOptions = [];
-    
+
+
     /**
      * Begins a widget.
-     * This method creates an instance of the calling class setting the MODE_BEGIN mode. Any item between 
-     * [[begin()]] and [[end()]] which match the filter attribute, will be selectable. 
+     * This method creates an instance of the calling class setting the MODE_BEGIN mode. Any item between
+     * [[begin()]] and [[end()]] which match the filter attribute, will be selectable.
      * It will apply the configuration
      * to the created instance. A matching [[end()]] call should be called later.
      * As some widgets may use output buffering, the [[end()]] call should be made in the same view
