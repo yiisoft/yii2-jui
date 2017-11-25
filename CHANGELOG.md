@@ -1,6 +1,12 @@
 Yii Framework 2 jui extension Change Log
 ========================================
 
+2.0.8 under development
+-----------------------
+
+- no changes in this release.
+
+
 2.0.7 November 25, 2017
 -----------------------
 
