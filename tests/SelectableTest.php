@@ -35,7 +35,7 @@ class SelectableTest extends TestCase
         ]);
         $out = ob_get_clean();
 
-        $out .= join("\n", [
+        $out .= implode("\n", [
             '<ul>',
                 '<li class="myselectableitem">Item 1</li>',
                 '<li class="myselectableitem">Item 2</li>',
@@ -63,7 +63,7 @@ class SelectableTest extends TestCase
             $out,
             'There should be a div with class myselectableitems enclosing html between begin()` and `end()` methods');
         static::assertRegExp(
-            '~<script type="text/javascript">jQuery\(document\)\.ready\(function \(\) \{\njQuery\(\'#myselectableitems\'\)\.selectable\(\{\"filter"\:"myselectableitem","tolerance"\:"touch"\}\);\n\}\);</script>~',
+            '~<script type="text/javascript">jQuery\(function \(\$\) \{\njQuery\(\'#myselectableitems\'\)\.selectable\(\{\"filter"\:"myselectableitem","tolerance"\:"touch"\}\);\n\}\);</script>~',
             $out,
             'There should be the jQuery UI Selectable plugin initialization for myselectableitems');
     }
