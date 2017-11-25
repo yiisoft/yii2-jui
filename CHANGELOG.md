@@ -8,7 +8,7 @@ Yii Framework 2 jui extension Change Log
 - Bug #46: `yii\jui\Selectable` add support for `begin()`, `end()` widget methods (fdezmc)
 - Enh #56: Use `jQuery` instead of `$` in generated code to avoid conflicts (samdark)
 - Chg #55: `yii\jui\AutoComplete::run()` now returns output instead of echoing it (unlimix)
-
+- Chg #72: Updated jQueryUI dependency to use `1.12.1` as minimum version (samdark) 
 
 2.0.6 July 22, 2016
 -----------------------
