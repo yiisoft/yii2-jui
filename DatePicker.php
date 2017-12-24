@@ -42,7 +42,7 @@ use yii\helpers\Json;
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'from_date')->widget(\yii\jui\DatePicker::classname(), [
+ * <?= $form->field($model, 'from_date')->widget(\yii\jui\DatePicker::className(), [
  *     //'language' => 'ru',
  *     //'dateFormat' => 'yyyy-MM-dd',
  * ]) ?>
