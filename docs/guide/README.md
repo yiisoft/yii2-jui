@@ -8,6 +8,7 @@ Getting Started
 ---------------
 
 * [Installation](installation.md)
+* [Assets Setup](assets-setup.md)
 * [Basic Usage](basic-usage.md)
 
 Usage
