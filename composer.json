@@ -15,6 +15,18 @@
         {
             "name": "Qiang Xue",
             "email": "qiang.xue@gmail.com"
+        },
+        {
+            "name": "Alexander Kochetov",
+            "email": "creocoder@gmail.com"
+        },
+        {
+            "name": "Carsten Brandt",
+            "email": "mail@cebe.cc"
+        },
+        {
+            "name": "Alexander Makarov",
+            "email": "sam@rmcreative.ru"
         }
     ],
     "require": {
@@ -29,7 +41,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "yii\\jui\\": ""
+            "yii\\jui\\": "src"
         }
     },
     "extra": {
