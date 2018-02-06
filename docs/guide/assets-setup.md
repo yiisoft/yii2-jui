@@ -7,7 +7,7 @@ Before using this package you should decide in which way you will install those 
 
 ## Using asset-packagist repository
 
-You can setup [asset-packagist.org](https://asset-packagist.org) as package source for the Bootstrap assets.
+You can setup [asset-packagist.org](https://asset-packagist.org) as package source for the JQuery UI assets.
 
 In the `composer.json` of your project, add the following lines:
 
@@ -54,7 +54,7 @@ will be placed, if you want to publish them using Yii:
 }
 ```
 
-Then you can run composer install/update command to pick up Bootstrap assets.
+Then you can run composer install/update command to pick up JQuery UI assets.
 
 > Note: `fxp/composer-asset-plugin` significantly slows down the `composer update` command in comparison
   to asset-packagist.
