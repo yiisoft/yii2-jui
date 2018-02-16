@@ -31,7 +31,7 @@ use yii\helpers\Html;
 class Draggable extends Widget
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected $clientEventMap = [
         'create' => 'dragcreate',

@@ -93,13 +93,13 @@ class Selectable extends Widget
      * @var array list of selectable items. Each item can be a string representing the item content
      * or an array of the following structure:
      *
-     * ~~~
+     * ```php
      * [
      *     'content' => 'item content',
      *     // the HTML attributes of the item container tag. This will overwrite "itemOptions".
      *     'options' => [],
      * ]
-     * ~~~
+     * ```
      */
     public $items = [];
     /**

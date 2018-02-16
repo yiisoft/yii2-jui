@@ -31,7 +31,7 @@ use yii\helpers\Html;
 class Droppable extends Widget
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected $clientEventMap = [
         'activate' => 'dropactivate',

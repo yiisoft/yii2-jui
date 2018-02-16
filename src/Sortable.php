@@ -50,13 +50,13 @@ class Sortable extends Widget
      * @var array list of sortable items. Each item can be a string representing the item content
      * or an array of the following structure:
      *
-     * ~~~
+     * ```php
      * [
      *     'content' => 'item content',
      *     // the HTML attributes of the item container tag. This will overwrite "itemOptions".
      *     'options' => [],
      * ]
-     * ~~~
+     * ```
      */
     public $items = [];
     /**
@@ -70,7 +70,7 @@ class Sortable extends Widget
     public $itemOptions = [];
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     protected $clientEventMap = [
         'activate' => 'sortactivate',

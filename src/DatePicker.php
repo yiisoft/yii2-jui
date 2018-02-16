@@ -115,7 +115,7 @@ class DatePicker extends InputWidget
 
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function init()
     {

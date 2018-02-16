@@ -53,7 +53,7 @@ use yii\helpers\Html;
 class AutoComplete extends InputWidget
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function run()
     {
@@ -69,8 +69,7 @@ class AutoComplete extends InputWidget
     {
         if ($this->hasModel()) {
             return Html::activeTextInput($this->model, $this->attribute, $this->options);
-        } else {
-            return Html::textInput($this->name, $this->value, $this->options);
         }
+        return Html::textInput($this->name, $this->value, $this->options);
     }
 }

@@ -74,7 +74,7 @@ class SliderInput extends InputWidget
 
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function init()
     {
