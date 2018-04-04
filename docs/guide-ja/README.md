@@ -8,6 +8,7 @@ Yii 2 JUI エクステンション
 --------
 
 * [インストール](installation.md)
+* [アセットのセットアップ](assets-setup.md)
 * [基本的な使用方法](basic-usage.md)
 
 使用方法
