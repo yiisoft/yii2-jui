@@ -1,7 +1,7 @@
 基本的な使用方法
 ================
 
-ビューファイルに、たった一行、下記のコードを記述すると、[jQuery UI DatePicker](http://api.jqueryui.com/datepicker/) ウィジェットがレンダリングされます。
+ビュー・ファイルに、たった一行、下記のコードを記述すると、[jQuery UI DatePicker](http://api.jqueryui.com/datepicker/) ウィジェットがレンダリングされます。
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>
