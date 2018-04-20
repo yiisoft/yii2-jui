@@ -35,13 +35,17 @@ class Widget extends \yii\base\Widget
      * For example, [this page](http://api.jqueryui.com/accordion/) shows
      * how to use the "Accordion" widget and the supported events (e.g. "create").
      * Keys are the event names and values are javascript code that is passed to the `.on()` function
-     * as the event handler.
+     * as the event handler. Can accept a array of handlers to create multiply listiners.
      *
      * For example you could write the following in your widget configuration:
      *
      * ```php
      * 'clientEvents' => [
-     *     'change' => 'function () { alert('event "change" occured.'); }'
+     *     'change' => "function () { alert('event \"change\" occured.'); }",
+     *     'update' => [
+     *         "function () { alert('event \"update\" occured.'); }",
+     *         "function (event, ui) { ui.item.addClass(\"update\"); }",
+     *     ],
      * ],
      * ```
      */
@@ -95,7 +99,9 @@ class Widget extends \yii\base\Widget
                 } else {
                     $eventName = strtolower($name . $event);
                 }
-                $js[] = "jQuery('#$id').on('$eventName', $handler);";
+                foreach (is_array($handler) ? $handler : [$handler] as $handlerItem) {
+                    $js[] = "jQuery('#$id').on('$eventName', $handlerItem);";
+                }
             }
             $this->getView()->registerJs(implode("\n", $js));
         }
