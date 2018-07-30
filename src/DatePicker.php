@@ -168,11 +168,8 @@ class DatePicker extends InputWidget
         $contents = [];
 
         // get formatted date value
-        if ($this->hasModel()) {
-            $value = Html::getAttributeValue($this->model, $this->attribute);
-        } else {
-            $value = $this->value;
-        }
+        $value = $this->value;
+
         if ($value !== null && $value !== '') {
             // format value according to dateFormat
             try {
