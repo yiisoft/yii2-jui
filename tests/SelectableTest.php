@@ -63,7 +63,7 @@ class SelectableTest extends TestCase
             $out,
             'There should be a div with class myselectableitems enclosing html between begin()` and `end()` methods');
         static::assertRegExp(
-            '~<script type="text/javascript">jQuery\(function \(\$\) \{\njQuery\(\'#myselectableitems\'\)\.selectable\(\{\"filter"\:"myselectableitem","tolerance"\:"touch"\}\);\n\}\);</script>~',
+            '~<script>jQuery\(function \(\$\) \{\njQuery\(\'#myselectableitems\'\)\.selectable\(\{\"filter"\:"myselectableitem","tolerance"\:"touch"\}\);\n\}\);</script>~',
             $out,
             'There should be the jQuery UI Selectable plugin initialization for myselectableitems');
     }

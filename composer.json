@@ -33,6 +33,9 @@
         "yiisoft/yii2": "~2.0.4",
         "bower-asset/jquery-ui": "~1.12.1"
     },
+    "require-dev": {
+        "phpunit/phpunit": "<7"
+    },
     "repositories": [
         {
             "type": "composer",
