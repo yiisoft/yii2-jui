@@ -42,7 +42,7 @@ class Dialog extends Widget
 
         //Fix for closing icon (x) not showing up in dialog
         $this->getView()->registerJs("
-            if ($.fn.button) {
+            if ($.fn.button && $.fn.button.noConflict !== undefined) {
                 var bootstrapButton = $.fn.button.noConflict(); 
                 $.fn.bootstrapBtn = bootstrapButton;
             }",
