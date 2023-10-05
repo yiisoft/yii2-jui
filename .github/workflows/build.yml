@@ -23,7 +23,8 @@ name: build
 
 jobs:
   phpunit:
-    if: github.event_name == 'pull_request' || github.event.repository.fork == true || (github.event_name == 'push' && github.ref == 'refs/heads/master')
+    # This workflow file runs actions for forked repositories, pull requests, and pushes to the master branch.
+    if: github.event.repository.fork == true || github.event_name == 'pull_request' || (github.event_name == 'push' && github.ref == 'refs/heads/master')
     uses: yiisoft/actions/.github/workflows/phpunit.yml@master
     with:
       os: >-
