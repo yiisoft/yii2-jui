@@ -1,6 +1,4 @@
 on:
-  fork:
-
   pull_request:
     paths-ignore:
       - 'docs/**'
