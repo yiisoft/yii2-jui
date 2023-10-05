@@ -25,7 +25,7 @@ name: build
 
 jobs:
   phpunit:
-    if: github.event.repository.fork == true || (github.event_name == 'push' && github.ref == 'refs/heads/master') || (github.event_name == 'pull_request' && github.event.action == 'opened')
+    if: github.event.repository.fork == true || (github.event_name == 'push' && github.ref == 'refs/heads/master') || (github.event_name == 'pull_request')
     uses: yiisoft/actions/.github/workflows/phpunit.yml@master
     with:
       os: >-
