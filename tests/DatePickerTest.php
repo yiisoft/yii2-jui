@@ -42,10 +42,10 @@ class DatePickerTest extends TestCase
         ]);
 
         // https://github.com/yiisoft/yii2-jui/issues/6
-        static::assertRegExp(
+        $this->assertMatchesRegularExpression(
             '~<script src="/assets/[0-9a-f]+/ui/i18n/datepicker-ru.js\?v=\d+"></script>~',
             $out,
-            'There should be language asset registered with timestamp appended.'
+            'There should be language asset registered with timestamp appended.',
         );
     }
 
@@ -79,6 +79,6 @@ class DatePickerTest extends TestCase
             'value' => $value
         ]);
         $output = ob_get_clean();
-        $this->assertContains($value, $output);
+        $this->assertStringContainsString($value, $output);
     }
 }

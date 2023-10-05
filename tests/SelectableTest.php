@@ -58,13 +58,15 @@ class SelectableTest extends TestCase
         ]);
 
         // https://github.com/yiisoft/yii2-jui/issues/46
-        static::assertRegExp(
+        $this->assertMatchesRegularExpression(
             '~<div id="myselectableitems">\n<ul>\n<li class="myselectableitem">Item 1</li>\n<li class="myselectableitem">Item 2</li>\n<li class="noselectableitem">Item 3</li>\n<li class="myselectableitem">Item 4</li>\n</ul>\n<div>\n<div>\n<div class="myselectableitem">Another item</div>\n</div>\n</div></div>~',
             $out,
-            'There should be a div with class myselectableitems enclosing html between begin()` and `end()` methods');
-        static::assertRegExp(
+            'There should be a div with class myselectableitems enclosing html between begin()` and `end()` methods',
+        );
+        $this->assertMatchesRegularExpression(
             '~<script>jQuery\(function \(\$\) \{\njQuery\(\'#myselectableitems\'\)\.selectable\(\{\"filter"\:"myselectableitem","tolerance"\:"touch"\}\);\n\}\);</script>~',
             $out,
-            'There should be the jQuery UI Selectable plugin initialization for myselectableitems');
+            'There should be the jQuery UI Selectable plugin initialization for myselectableitems',
+        );
     }
 }
