@@ -1,7 +1,7 @@
 适用于 Yii 2 的 JUI 扩展
 =======================
 
-这是适用于 Yii 2 的 jQuery UI 扩展。此扩展对 [jQuery UI 小部件](http://jqueryui.com/)进行封装，从而方便快捷的在 Yii 应用程序中使用jQuery UI小部件。
+这是适用于 Yii 2 的 jQuery UI 扩展。此扩展对 [jQuery UI 小部件](https://jqueryui.com/)进行封装，从而方便快捷的在 Yii 应用程序中使用jQuery UI小部件。
 
 起步
 ---------------
