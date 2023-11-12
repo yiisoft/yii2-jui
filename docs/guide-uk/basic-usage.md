@@ -1,7 +1,7 @@
 Основне використання
 ====================
 
-Наступний рядок коду в файлі буде виводити віджет [JQuery UI DatePicker](http://api.jqueryui.com/datepicker/):
+Наступний рядок коду в файлі буде виводити віджет [JQuery UI DatePicker](https://api.jqueryui.com/datepicker/):
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>

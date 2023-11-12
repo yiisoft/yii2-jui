@@ -2,7 +2,7 @@ Basic Usage
 ===========
 
 The following
-single line of code in a view file would render a [jQuery UI DatePicker](http://api.jqueryui.com/datepicker/) widget:
+single line of code in a view file would render a [jQuery UI DatePicker](https://api.jqueryui.com/datepicker/) widget:
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>

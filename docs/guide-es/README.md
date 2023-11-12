@@ -1,7 +1,7 @@
 Extensión JUI para Yii 2
 ========================
 
-Esta es la extensión de jQuery UI para Yii 2. Encapsula [jQuery UI widgets](http://jqueryui.com/) como Yii widgets,
+Esta es la extensión de jQuery UI para Yii 2. Encapsula [jQuery UI widgets](https://jqueryui.com/) como Yii widgets,
 hacer uso de jQuery UI widgets en aplicaciones Yii es extremadamente fácil.
 
 Pasos Iniciales

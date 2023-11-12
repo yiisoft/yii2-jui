@@ -1,7 +1,7 @@
 基本用法
 ===========
 
-下面的代码将在视图文件中呈现 [jQuery UI DatePicker](http://api.jqueryui.com/datepicker/) 小部件：
+下面的代码将在视图文件中呈现 [jQuery UI DatePicker](https://api.jqueryui.com/datepicker/) 小部件：
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>

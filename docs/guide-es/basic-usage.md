@@ -2,7 +2,7 @@ Uso Básico
 ==========
 
 La siguiente
-linea de código en una vista renderizaría un [jQuery UI DatePicker](http://api.jqueryui.com/datepicker/) widget:
+linea de código en una vista renderizaría un [jQuery UI DatePicker](https://api.jqueryui.com/datepicker/) widget:
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>
