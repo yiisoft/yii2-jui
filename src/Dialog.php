@@ -1,8 +1,8 @@
 <?php
 /**
- * @link http://www.yiiframework.com/
+ * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
+ * @license https://www.yiiframework.com/license/
  */
 
 namespace yii\jui;
@@ -26,7 +26,7 @@ use yii\helpers\Html;
  * Dialog::end();
  * ```
  *
- * @see http://api.jqueryui.com/dialog/
+ * @see https://api.jqueryui.com/dialog/
  * @author Alexander Kochetov <creocoder@gmail.com>
  * @since 2.0
  */
@@ -43,7 +43,7 @@ class Dialog extends Widget
         //Fix for closing icon (x) not showing up in dialog
         $this->getView()->registerJs("
             if ($.fn.button) {
-                var bootstrapButton = $.fn.button.noConflict(); 
+                var bootstrapButton = $.fn.button.noConflict();
                 $.fn.bootstrapBtn = bootstrapButton;
             }",
             \yii\web\View::POS_READY
