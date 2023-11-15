@@ -1,8 +1,8 @@
 <?php
 /**
- * @link http://www.yiiframework.com/
+ * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
+ * @license https://www.yiiframework.com/license/
  */
 
 namespace yii\jui;
@@ -68,7 +68,7 @@ use yii\helpers\Html;
  * Selectable::end();
  * ```
  *
- * @see http://api.jqueryui.com/selectable/
+ * @see https://api.jqueryui.com/selectable/
  * @author Alexander Kochetov <creocoder@gmail.com>
  * @since 2.0
  */
@@ -129,7 +129,7 @@ class Selectable extends Widget
         $config['mode'] = self::MODE_BEGIN;
         parent::begin($config);
     }
-    
+
     /**
      * Initializes the widget.
      */
@@ -140,7 +140,7 @@ class Selectable extends Widget
             echo Html::beginTag('div', $this->options) . "\n";
         }
     }
-    
+
     /**
      * Renders the widget.
      */
@@ -155,10 +155,10 @@ class Selectable extends Widget
             echo $this->renderItems() . "\n";
             echo Html::endTag($tag) . "\n";
         }
-        
+
         $this->registerWidget('selectable');
     }
-    
+
     /**
      * Renders selectable items as specified on [[items]].
      * @return string the rendering result.

@@ -1,8 +1,8 @@
 <?php
 /**
- * @link http://www.yiiframework.com/
+ * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
+ * @license https://www.yiiframework.com/license/
  */
 
 namespace yii\jui;
@@ -25,14 +25,14 @@ class Widget extends \yii\base\Widget
     /**
      * @var array the options for the underlying jQuery UI widget.
      * Please refer to the corresponding jQuery UI widget Web page for possible options.
-     * For example, [this page](http://api.jqueryui.com/accordion/) shows
+     * For example, [this page](https://api.jqueryui.com/accordion/) shows
      * how to use the "Accordion" widget and the supported options (e.g. "header").
      */
     public $clientOptions = [];
     /**
      * @var array the event handlers for the underlying jQuery UI widget.
      * Please refer to the corresponding jQuery UI widget Web page for possible events.
-     * For example, [this page](http://api.jqueryui.com/accordion/) shows
+     * For example, [this page](https://api.jqueryui.com/accordion/) shows
      * how to use the "Accordion" widget and the supported events (e.g. "create").
      * Keys are the event names and values are javascript code that is passed to the `.on()` function
      * as the event handler.

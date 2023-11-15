@@ -1,8 +1,8 @@
 <?php
 /**
- * @link http://www.yiiframework.com/
+ * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
+ * @license https://www.yiiframework.com/license/
  */
 
 namespace yii\jui;
@@ -57,7 +57,7 @@ use yii\helpers\Json;
  * [['from_date'], 'default', 'value' => null],
  * ```
  *
- * @see http://api.jqueryui.com/datepicker/
+ * @see https://api.jqueryui.com/datepicker/
  * @author Alexander Kochetov <creocoder@gmail.com>
  * @author Carsten Brandt <mail@cebe.cc>
  * @since 2.0
@@ -86,9 +86,9 @@ class DatePicker extends InputWidget
      * to populate the [[clientOptions|clientOption]] `dateFormat`.
      * The value can be one of "short", "medium", "long", or "full", which represents a preset format of different lengths.
      *
-     * It can also be a custom format as specified in the [ICU manual](http://userguide.icu-project.org/formatparse/datetime#TOC-Date-Time-Format-Syntax).
+     * It can also be a custom format as specified in the [ICU manual](https://userguide.icu-project.org/formatparse/datetime#TOC-Date-Time-Format-Syntax).
      * Alternatively this can be a string prefixed with `php:` representing a format that can be recognized by the
-     * PHP [date()](http://php.net/manual/de/function.date.php)-function.
+     * PHP [date()](https://php.net/manual/de/function.date.php)-function.
      *
      * For example:
      *
