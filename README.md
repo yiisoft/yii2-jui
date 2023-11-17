@@ -1,12 +1,12 @@
 <p align="center">
-    <a href="http://jqueryui.com/" target="_blank" rel="external">
+    <a href="https://jqueryui.com/" target="_blank" rel="external">
         <img src="https://brand.jquery.org/resources/jqueryui-mark-dark.gif" height="110px">
     </a>
     <h1 align="center">JUI Extension for Yii 2</h1>
     <br>
 </p>
 
-This is the JQuery UI extension for [Yii framework 2.0](http://www.yiiframework.com). It encapsulates [JQuery UI widgets](http://jqueryui.com/) as Yii widgets,
+This is the JQuery UI extension for [Yii framework 2.0](https://www.yiiframework.com). It encapsulates [JQuery UI widgets](https://jqueryui.com/) as Yii widgets,
 and makes using JQuery UI widgets in Yii applications extremely easy.
 
 For license information check the [LICENSE](LICENSE.md)-file.
@@ -20,7 +20,7 @@ Documentation is at [docs/guide/README.md](docs/guide/README.md).
 Installation
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+The preferred way to install this extension is through [composer](https://getcomposer.org/download/).
 
 Either run
 
@@ -40,7 +40,7 @@ Usage
 -----
 
 The following
-single line of code in a view file would render a [JQuery UI DatePicker](http://api.jqueryui.com/datepicker/) widget:
+single line of code in a view file would render a [JQuery UI DatePicker](https://api.jqueryui.com/datepicker/) widget:
 
 ```php
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>
