@@ -86,7 +86,7 @@ class DatePicker extends InputWidget
      * to populate the [[clientOptions|clientOption]] `dateFormat`.
      * The value can be one of "short", "medium", "long", or "full", which represents a preset format of different lengths.
      *
-     * It can also be a custom format as specified in the [ICU manual](https://userguide.icu-project.org/formatparse/datetime#TOC-Date-Time-Format-Syntax).
+     * It can also be a custom format as specified in the [ICU manual](https://unicode-org.github.io/icu/userguide/format_parse/datetime/#datetime-format-syntax).
      * Alternatively this can be a string prefixed with `php:` representing a format that can be recognized by the
      * PHP [date()](https://php.net/manual/de/function.date.php)-function.
      *
