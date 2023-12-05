@@ -12,6 +12,7 @@ use yii\base\InvalidParamException;
 use yii\helpers\FormatConverter;
 use yii\helpers\Html;
 use yii\helpers\Json;
+use yii\helpers\ArrayHelper;
 
 /**
  * DatePicker renders a `datepicker` jQuery UI widget.
@@ -199,7 +200,18 @@ class DatePicker extends InputWidget
                 $contents[] = Html::hiddenInput($this->name, $value, $options);
             }
             $this->clientOptions['defaultDate'] = $value;
+
+            //check for user defined value for option altField
+            $customAltField = ArrayHelper::getValue($this->clientOptions, 'altField', false);
+
+            //add the default field selector 
             $this->clientOptions['altField'] = '#' . $this->options['id'];
+
+            //add any custom field selector if specified
+            if ($customAltField) {
+                $this->clientOptions['altField'] .=  ', ' . $customAltField;
+            }
+            
             $contents[] = Html::tag('div', null, $this->containerOptions);
         }
 
