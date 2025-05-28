@@ -19,7 +19,7 @@ class DatePickerLanguageAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = '@bower/jquery-ui';
+    public $sourcePath = '@npm/components-jqueryui';
     /**
      * @var boolean whether to automatically generate the needed language js files.
      * If this is true, the language js files will be determined based on the actual usage of [[DatePicker]]

@@ -1,0 +1,5 @@
+{
+    "dependencies": {
+        "components-jqueryui": "^1.12.1"
+    }
+}
