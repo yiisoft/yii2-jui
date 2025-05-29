@@ -17,6 +17,11 @@ Documentation is at [docs/guide/README.md](docs/guide/README.md).
 [![Total Downloads](https://poser.pugx.org/yiisoft/yii2-jui/downloads.png)](https://packagist.org/packages/yiisoft/yii2-jui)
 [![Build Status](https://github.com/yiisoft/yii2-jui/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-jui/actions)
 
+Requirements
+------------
+
+- PHP 8.1 or higher.
+
 Installation
 ------------
 
@@ -25,13 +30,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-php composer.phar require --prefer-dist yiisoft/yii2-jui
+php composer.phar require --prefer-dist yiisoft/yii2-jui:^22.x-dev
 ```
 
 or add
 
 ```
-"yiisoft/yii2-jui": "~2.0.0"
+"yiisoft/yii2-jui": "^22.x-dev"
 ```
 
 to the require section of your `composer.json` file.
