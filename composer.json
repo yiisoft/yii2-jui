@@ -3,7 +3,7 @@
     "description": "The Jquery UI extension for the Yii framework",
     "keywords": [
         "yii2",
-        "Jquery UI"
+        "jQuery UI"
     ],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
