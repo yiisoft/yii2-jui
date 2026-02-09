@@ -16,9 +16,14 @@ Documentation is at [docs/guide/README.md](docs/guide/README.md).
 [![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-jui/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-jui)
 [![Total Downloads](https://poser.pugx.org/yiisoft/yii2-jui/downloads.png)](https://packagist.org/packages/yiisoft/yii2-jui)
 [![Build Status](https://github.com/yiisoft/yii2-jui/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-jui/actions)
+[![codecov](https://codecov.io/gh/yiisoft/yii2-jui/graph/badge.svg)](https://codecov.io/gh/yiisoft/yii2-jui)
 
 Installation
 ------------
+
+> [!IMPORTANT]
+> - The minimum required [PHP](https://www.php.net/) version is PHP `7.4`.
+> - It works best with PHP `8`.
 
 The preferred way to install this extension is through [composer](https://getcomposer.org/download/).
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -42,7 +43,7 @@ use yii\helpers\Json;
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'from_date')->widget(\yii\jui\DatePicker::className(), [
+ * <?= $form->field($model, 'from_date')->widget(\yii\jui\DatePicker::class, [
  *     //'language' => 'ru',
  *     //'dateFormat' => 'yyyy-MM-dd',
  * ]) ?>
@@ -177,7 +178,7 @@ class DatePicker extends InputWidget
             // format value according to dateFormat
             try {
                 $value = Yii::$app->formatter->asDate($value, $this->dateFormat);
-            } catch(InvalidParamException $e) {
+            } catch (InvalidParamException $e) {
                 // ignore exception and keep original value if it is not a valid date
             }
         }

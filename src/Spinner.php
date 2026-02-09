@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -35,7 +36,7 @@ use yii\helpers\Html;
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'from_date')->widget(\yii\jui\Spinner::classname(), [
+ * <?= $form->field($model, 'from_date')->widget(\yii\jui\Spinner::class, [
  *     'clientOptions' => ['step' => 2],
  * ]) ?>
  * ```

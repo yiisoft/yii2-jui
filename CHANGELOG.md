@@ -1,10 +1,11 @@
 Yii Framework 2 jui extension Change Log
 ========================================
 
-2.0.8 under development
------------------------
+3.0.0 under development
+------------------------
 
-- no changes in this release.
+- Enh #113: Applying Yii2 coding standards (@s1lver)
+- Enh #113: Raise min version to PHP 7.4 (@s1lver)
 
 
 2.0.7 November 25, 2017

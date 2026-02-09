@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -74,8 +75,8 @@ use yii\helpers\Html;
  */
 class Selectable extends Widget
 {
-    const MODE_DEFAULT = 'MODE_DEFAULT';
-    const MODE_BEGIN = 'MODE_BEGIN';
+    public const MODE_DEFAULT = 'MODE_DEFAULT';
+    public const MODE_BEGIN = 'MODE_BEGIN';
 
     /**
      * @var string the mode used to render the widget.
@@ -125,7 +126,8 @@ class Selectable extends Widget
      * @return static the newly created widget instance
      * @see end()
      */
-    public static function begin($config = []) {
+    public static function begin($config = [])
+    {
         $config['mode'] = self::MODE_BEGIN;
         parent::begin($config);
     }

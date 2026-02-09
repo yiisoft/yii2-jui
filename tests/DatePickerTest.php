@@ -1,4 +1,5 @@
 <?php
+
 namespace yiiunit\extensions\jui;
 
 use Yii;
@@ -13,7 +14,7 @@ use yii\web\View;
  */
 class DatePickerTest extends TestCase
 {
-    public function testLanguageAsset()
+    public function testLanguageAsset(): void
     {
         if (version_compare(str_replace('-dev', '', Yii::getVersion()), '2.0.3', '<')) {
             $this->markTestSkipped('This feature is only available since Yii 2.0.3.');
@@ -42,14 +43,14 @@ class DatePickerTest extends TestCase
         ]);
 
         // https://github.com/yiisoft/yii2-jui/issues/6
-        static::assertRegExp(
+        static::assertMatchesRegularExpression(
             '~<script src="/assets/[0-9a-f]+/ui/i18n/datepicker-ru.js\?v=\d+"></script>~',
             $out,
             'There should be language asset registered with timestamp appended.'
         );
     }
 
-    public function invalidDateInputProvider()
+    public function invalidDateInputProvider(): array
     {
         return [
             ['0000!'],
@@ -63,7 +64,7 @@ class DatePickerTest extends TestCase
      * No exception should be thrown by the formatter, instead the value should stay as is in this case
      * @dataProvider invalidDateInputProvider
      */
-    public function testInvalidDateValue($value)
+    public function testInvalidDateValue($value): void
     {
         $this->mockWebApplication([
             'components' => [
@@ -79,6 +80,6 @@ class DatePickerTest extends TestCase
             'value' => $value
         ]);
         $output = ob_get_clean();
-        $this->assertContains($value, $output);
+        $this->assertStringContainsString($value, $output);
     }
 }

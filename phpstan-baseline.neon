@@ -1,0 +1,385 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^PHPDoc tag @throws has invalid value \(InvalidConfigException\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 145 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Accordion.php
+
+		-
+			message: '#^Property yii\\jui\\Accordion\:\:\$headerOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Accordion.php
+
+		-
+			message: '#^Property yii\\jui\\Accordion\:\:\$itemOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Accordion.php
+
+		-
+			message: '#^Property yii\\jui\\Accordion\:\:\$items type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Accordion.php
+
+		-
+			message: '#^Property yii\\jui\\Accordion\:\:\$options type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Accordion.php
+
+		-
+			message: '#^Method yii\\jui\\DatePicker\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/DatePicker.php
+
+		-
+			message: '#^Parameter \#1 \$value of method yii\\i18n\\Formatter\:\:asDate\(\) expects DateTimeInterface\|int\|string\|null, array\|string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DatePicker.php
+
+		-
+			message: '#^Parameter \#2 \$content of static method yii\\helpers\\BaseHtml\:\:tag\(\) expects string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DatePicker.php
+
+		-
+			message: '#^Parameter \#2 \$value of static method yii\\helpers\\BaseHtml\:\:hiddenInput\(\) expects string\|null, array\|string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DatePicker.php
+
+		-
+			message: '#^Parameter \#2 \$value of static method yii\\helpers\\BaseHtml\:\:textInput\(\) expects string\|null, array\|string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/DatePicker.php
+
+		-
+			message: '#^Property yii\\jui\\DatePicker\:\:\$containerOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/DatePicker.php
+
+		-
+			message: '#^Method yii\\jui\\DatePickerLanguageAsset\:\:registerAssetFiles\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/DatePickerLanguageAsset.php
+
+		-
+			message: '#^Method yii\\jui\\Dialog\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Dialog.php
+
+		-
+			message: '#^Method yii\\jui\\Draggable\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Draggable.php
+
+		-
+			message: '#^Property yii\\jui\\Draggable\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Draggable.php
+
+		-
+			message: '#^Method yii\\jui\\Droppable\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Droppable.php
+
+		-
+			message: '#^Property yii\\jui\\Droppable\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Droppable.php
+
+		-
+			message: '#^Instanceof between yii\\base\\Model and yii\\base\\Model will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: src/InputWidget.php
+
+		-
+			message: '#^Method yii\\jui\\InputWidget\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/InputWidget.php
+
+		-
+			message: '#^Method yii\\jui\\Menu\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Menu.php
+
+		-
+			message: '#^Property yii\\jui\\Menu\:\:\$clientEvents type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Menu.php
+
+		-
+			message: '#^Property yii\\jui\\Menu\:\:\$clientOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Menu.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between array and false will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 1
+			path: src/Menu.php
+
+		-
+			message: '#^Method yii\\jui\\ProgressBar\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/ProgressBar.php
+
+		-
+			message: '#^Method yii\\jui\\Resizable\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Resizable.php
+
+		-
+			message: '#^Property yii\\jui\\Resizable\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Resizable.php
+
+		-
+			message: '#^Method yii\\jui\\Selectable\:\:begin\(\) has parameter \$config with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Selectable.php
+
+		-
+			message: '#^Method yii\\jui\\Selectable\:\:begin\(\) should return static\(yii\\jui\\Selectable\) but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Selectable.php
+
+		-
+			message: '#^Method yii\\jui\\Selectable\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Selectable.php
+
+		-
+			message: '#^PHPDoc tag @throws has invalid value \(InvalidConfigException\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 144 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Selectable.php
+
+		-
+			message: '#^Property yii\\jui\\Selectable\:\:\$itemOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Selectable.php
+
+		-
+			message: '#^Property yii\\jui\\Selectable\:\:\$items type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Selectable.php
+
+		-
+			message: '#^Property yii\\jui\\Selectable\:\:\$options type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Selectable.php
+
+		-
+			message: '#^Property yii\\jui\\Slider\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Slider.php
+
+		-
+			message: '#^Method yii\\jui\\SliderInput\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/SliderInput.php
+
+		-
+			message: '#^Property yii\\jui\\SliderInput\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/SliderInput.php
+
+		-
+			message: '#^Property yii\\jui\\SliderInput\:\:\$containerOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/SliderInput.php
+
+		-
+			message: '#^PHPDoc tag @throws has invalid value \(InvalidConfigException\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 142 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Sortable.php
+
+		-
+			message: '#^Property yii\\jui\\Sortable\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Sortable.php
+
+		-
+			message: '#^Property yii\\jui\\Sortable\:\:\$itemOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Sortable.php
+
+		-
+			message: '#^Property yii\\jui\\Sortable\:\:\$items type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Sortable.php
+
+		-
+			message: '#^Property yii\\jui\\Sortable\:\:\$options type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Sortable.php
+
+		-
+			message: '#^Property yii\\jui\\Spinner\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Spinner.php
+
+		-
+			message: '#^PHPDoc tag @throws has invalid value \(InvalidConfigException\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 137 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Tabs.php
+
+		-
+			message: '#^Property yii\\jui\\Tabs\:\:\$headerOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Tabs.php
+
+		-
+			message: '#^Property yii\\jui\\Tabs\:\:\$itemOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Tabs.php
+
+		-
+			message: '#^Property yii\\jui\\Tabs\:\:\$items type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Tabs.php
+
+		-
+			message: '#^Property yii\\jui\\Tabs\:\:\$options type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Tabs.php
+
+		-
+			message: '#^Method yii\\jui\\Widget\:\:init\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Method yii\\jui\\Widget\:\:registerClientEvents\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Method yii\\jui\\Widget\:\:registerClientOptions\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Method yii\\jui\\Widget\:\:registerWidget\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Property yii\\jui\\Widget\:\:\$clientEventMap type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Property yii\\jui\\Widget\:\:\$clientEvents type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Property yii\\jui\\Widget\:\:\$clientOptions type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Property yii\\jui\\Widget\:\:\$options type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between array and false will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 1
+			path: src/Widget.php
+
+		-
+			message: '#^Method yiiunit\\extensions\\jui\\DatePickerTest\:\:invalidDateInputProvider\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/DatePickerTest.php
+
+		-
+			message: '#^Method yiiunit\\extensions\\jui\\DatePickerTest\:\:testInvalidDateValue\(\) has parameter \$value with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: tests/DatePickerTest.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertStringContainsString\(\) expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/DatePickerTest.php
+
+		-
+			message: '#^Method yiiunit\\extensions\\jui\\TestCase\:\:mockWebApplication\(\) has parameter \$config with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Static property yii\\BaseYii\<yii\\web\\IdentityInterface\>\:\:\$app \(yii\\console\\Application\|yii\\web\\Application\<yii\\web\\IdentityInterface\>\) does not accept null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: tests/TestCase.php
+
+		-
+			message: '#^Variable \$content might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: tests/data/views/layout.php
+
+		-
+			message: '#^Variable \$this might not be defined\.$#'
+			identifier: variable.undefined
+			count: 5
+			path: tests/data/views/layout.php
