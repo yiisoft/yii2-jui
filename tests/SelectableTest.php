@@ -1,11 +1,15 @@
 <?php
 
+/**
+ * @link https://www.yiiframework.com/
+ * @copyright Copyright (c) 2008 Yii Software LLC
+ * @license https://www.yiiframework.com/license/
+ */
+
 namespace yiiunit\extensions\jui;
 
 use Yii;
 use yii\jui\Selectable;
-use yii\web\AssetManager;
-use yii\web\View;
 
 /**
  * Tests for Selectable widget

@@ -74,7 +74,7 @@ class DatePicker extends InputWidget
      */
     public $language;
     /**
-     * @var boolean If true, shows the widget as an inline calendar and the input as a hidden field.
+     * @var bool If true, shows the widget as an inline calendar and the input as a hidden field.
      */
     public $inline = false;
     /**

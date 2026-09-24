@@ -95,7 +95,7 @@ class Tabs extends Widget
      */
     public $linkTemplate = '<a href="{url}">{label}</a>';
     /**
-     * @var boolean whether the labels for header items should be HTML-encoded.
+     * @var bool whether the labels for header items should be HTML-encoded.
      */
     public $encodeLabels = true;
 
